@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c7wr78esv60j1"]
 
+[ext_resource type="Texture2D" uid="uid://0ddeyudn7mva" path="res://Assets/Divider-UI.png" id="1_ajass"]
 [ext_resource type="Texture2D" uid="uid://jimv1x2c7o2c" path="res://Assets/Table-UI.png" id="1_kxexh"]
 
 [node name="TableUI" type="Control" unique_id=908206045]
@@ -9,6 +10,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Divider" type="TextureRect" parent="." unique_id=1767185268]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ajass")
 
 [node name="TableBg" type="TextureRect" parent="." unique_id=47032900]
 layout_mode = 1
@@ -35,7 +42,13 @@ offset_right = 40.0
 offset_bottom = 20.0
 grow_vertical = 2
 
-[node name="InstancedNPC" type="Node2D" parent="." unique_id=609501230]
+[node name="InstancedNPC" type="Control" parent="." unique_id=1676459706]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ChecklistBtn" type="TextureButton" parent="." unique_id=889027622]
 layout_mode = 1
@@ -50,3 +63,13 @@ offset_right = -128.0
 offset_bottom = -21.0
 grow_horizontal = 0
 grow_vertical = 0
+
+[node name="CheclistUI" type="Control" parent="." unique_id=1578293699]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChecklistBg" type="TextureRect" parent="CheclistUI" unique_id=168479702]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
